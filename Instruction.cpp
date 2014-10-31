@@ -1,10 +1,19 @@
 #include <iostream>
+#include<string>
+#include<vector>
 #include "Instruction.h"
 using namespace std;
+
 
 Instruction::Instruction(int n) : instWord(n) // initializer list
 {
 	opcode = instWord >> 26;
+	//func = instWord & 0x3F;
+	//shamt = (instWord >> 6) & 0x1f;
+	//rd = (instWord >> 11) & 0x1f;
+	//rt = (instWord >> 16) & 0x1f;
+	//rs = (instWord >> 21) & 0x1f;
+
 	// list of registers
 	registers.push_back("$0");
 	registers.push_back("$at");
@@ -39,3 +48,11 @@ Instruction::Instruction(int n) : instWord(n) // initializer list
 	registers.push_back("$fp");
 	registers.push_back("$ra");
 }
+
+
+
+
+
+
+
+

@@ -12,7 +12,18 @@ public:
 	IFormat(int);			// constructor
 	~IFormat();				// destructor
 	void decodeInst();
-
+	void addi();
+	void lui();
+	void addiu();
+	void andi();
+	void beq();
+	void bne();
+	void lw();
+	void ori();
+	void slti();
+	void sb();
+	void sh();
+	void sw();
 
 private:
 	int rt;    //target	
