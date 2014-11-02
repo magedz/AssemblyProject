@@ -15,9 +15,9 @@ public:
 	vector <string> funcList;
 	vector<int> labels; // label0 is in index 0 ..etc
 	vector<reg> registers;
-	vector<int> registerNames;
+	//vector<int> registerNames;
 	vector<char> M;
-	vector<char>R;
+	//vector<char>R;
 	vector<int> binaryList;
 	//Instruction* PC;
 
