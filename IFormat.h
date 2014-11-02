@@ -12,27 +12,40 @@ public:
 	IFormat(int);			// constructor
 	~IFormat();				// destructor
 	void decodeInst();
-	void addi();
-	void lui();
-	void addiu();
-	void andi();
-	void beq();
-	void bne();
-	void lw();
-	void ori();
-	void slti();
-	void sb();
-	void sh();
-	void sw();
+	void addiDisassemble();
+	void luiDisassemble();
+	void addiuDisassemble();
+	void andiDisassemble();
+	void beqDisassemble();
+	void bneDisassemble();
+	void lwDisassemble();
+	void oriDisassemble();
+	void sltiDisassemble();
+	void sbDisassemble();
+	void shDisassemble();
+	void swDisassemble();
+
+	void addiSimulate();
+	void luiSimulate();
+	void addiuSimulate();
+	void andiSimulate();
+	void beqSimulate();
+	void bneSimulate();
+	void lwSimulate();
+	void oriSimulate();
+	void sltiSimulate();
+	void sbSimulate();
+	void shSimulate();
+	void swSimulate();
+
+
 
 private:
 	int rt;    //target	
 	int rs;		//source	
 	int imm;	//immediate
 	int signedImm;                  // signed Immediate
-	vector<string> funcList;		//list of finished instructions
-	vector<string> registers;		//list of register names (access by index)
-	string temp = NULL;
-}
+	string instString = NULL;
+};
 
 #endif

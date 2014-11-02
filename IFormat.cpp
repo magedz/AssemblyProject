@@ -11,129 +11,152 @@ void IFormat::decodeInst()
 {
 	switch (opcode)
 	{
-	case 0x8:			addi();
+	case 0x8:			addiDisassemble();
 		break;
-	case 0x9:			addiu();
+	case 0x9:			addiuDisassemble();
 
 		break;
-	case 0xc:			andi();
-
-
-		break;
-	case 0x4:			beq();
-		break;
-
-	case 0x5:			bne();
+	case 0xc:			andiDisassemble();
 
 		break;
-	case 0xf:			lui();
+	case 0x4:			beqDisassemble();
+		break;
+
+	case 0x5:			bneDisassemble();
+
+		break;
+	case 0xf:			luiDisassemble();
 		break;
 
 		break;
-	case 0x23:			lw();
+	case 0x23:			lwDisassemble();
 
 		break;
-	case 0xd:			ori();
-		break;
-
-
-	case 0xa:			slti();
-		break;
-
-	case 0x28:			sb();
+	case 0xd:			oriDisassemble();
 		break;
 
 
-	case 0x29:			sh();
+	case 0xa:			sltiDisassemble();
+		break;
+
+	case 0x28:			sbDisassemble();
 		break;
 
 
-	case 0x2b:			sw();
+	case 0x29:			shDisassemble();
+		break;
+
+
+	case 0x2b:			swDisassemble();
 		break;
 
 	default:
-		temp = "Unknown Intruction";
+		instString = "Unknown Intruction";
 	}
 }
 
-void IFormat::addi()
+void IFormat::addiDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "addi" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "addi" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	cout << instString << endl;
 }
 
-void IFormat::lui()
+void IFormat::luiDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "lui" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "lui" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	cout << instString << endl;
 }
-void IFormat::addiu()
+void IFormat::addiuDisassemble()
 {
-	temp += "addiu" + registers[rs] + "," + registers[rt] + "," + to_string(imm);
-	funcList.push_back(temp);
-}
-
-void IFormat::andi()
-{
-	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "andi" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "addiu" + registers[rs].name + "," + registers[rt] + "," + to_string(imm);
+	cout << instString << endl;
 }
 
-void IFormat::beq()
+void IFormat::andiDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "beq" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "andi" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	cout << instString << endl;
 }
 
-void IFormat::bne()
+void IFormat::beqDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "bne" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "beq" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	cout << instString << endl;
 }
 
-void IFormat::lw()
+void IFormat::bneDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "lw" + registers[rt] + "," + to_string(signedImm) + "(" + registers[rt] + ")";
-	funcList.push_back(temp);
+	instString += "bne" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	cout << instString << endl;
 }
 
-void IFormat::ori()
+void IFormat::lwDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "ori" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "lw" + registers[rt].name + "," + to_string(signedImm) + "(" + registers[rt].name + ")";
+	cout << instString << endl;
 }
 
-void IFormat::slti()
+void IFormat::oriDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "slti" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "ori" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	cout << instString << endl;
 }
 
-void IFormat::sb()
+void IFormat::sltiDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "sb" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "slti" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	cout << instString << endl;
 }
 
-void IFormat::sh()
+void IFormat::sbDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "sh" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "sb" + registers[rt].name + "," + to_string(signedImm) + "(" + registers[rt].name + ")";
+	cout << instString << endl;
 }
 
-void IFormat::sw()
+void IFormat::shDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	temp += "sw" + registers[rs] + "," + registers[rt] + "," + to_string(signedImm);
-	funcList.push_back(temp);
+	instString += "sh" + registers[rt].name + "," + to_string(signedImm) + "(" + registers[rt].name + ")";
+	cout << instString << endl;
+}
+
+void IFormat::swDisassemble()
+{
+	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
+	instString += "lw" + registers[rt].name + "," + to_string(signedImm) + "(" + registers[rt].name + ")";
+	cout << instString << endl;
+}
+
+void IFormat::sbSimulate()
+{
+	memory[ rs + signedImm] = rt;
+	PC += 4;
+}
+
+void IFormat::sltiSimulate()
+{
+	rd = (rs < signedImm) ? 1 : 0;
+	PC += 4;
+}
+
+void IFormat::lwSimulate ()
+{
+	rt = memory[ rs + signedImm];      // assuming we have a vector called memory
+	PC += 4;
+}
+
+void IFormat::beqSimulate()
+{
+	if (rs == rt)
+		PC = PC + 4 + signedImm; // actuall PC (pointer) or simulated PC? (signedImm here means address)
 }
