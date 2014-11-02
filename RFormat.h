@@ -7,17 +7,25 @@ class RFormat :public Instruction
 {
 public:
 	RFormat(int); //constructor
+	void decodeInstDisassemble();
+	void addDisassemble();
+	void adduDisassemble();
+	void andDisassemble();
+	void jrDisassemble();
+	void sltDisassemble();
+	void sltuDisassemble();
+	void sllDisassemble();
+	void srlDisassemble();
+	void subDisassemble();
+	void subuDisassemble();
 	void decodeInst();
-	void add();
-	void addu();
-	void and();
-	void jr();
-	void slt();
-	void sltu();
-	void sll();
-	void srl();
-	void sub();
-	void subu();
+	void andSimulate();
+	void adduSimulate();
+	void jrSimulate();
+	void sllSimulate();
+	void subSimulate();
+	void sltSimulate();
+	void srlSimulate();
 
 
 
