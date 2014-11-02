@@ -12,42 +12,54 @@ void IFormat::decodeInst()
 	switch (opcode)
 	{
 	case 0x8:			addiDisassemble();
+		Instruction::myFunctionPointer = &this->addiSimulate;
 		break;
 	case 0x9:			addiuDisassemble();
+		Instruction::myFunctionPointer = &this->addiuSimulate;
 
 		break;
 	case 0xc:			andiDisassemble();
+		Instruction::myFunctionPointer = &this->andiSimulate;
 
 		break;
 	case 0x4:			beqDisassemble();
+		Instruction::myFunctionPointer = &this->beqSimulate;
 		break;
 
 	case 0x5:			bneDisassemble();
+		Instruction::myFunctionPointer = &this->bneSimulate;
 
 		break;
 	case 0xf:			luiDisassemble();
+		Instruction::myFunctionPointer = &this->luiSimulate;
 		break;
 
 		break;
 	case 0x23:			lwDisassemble();
+		Instruction::myFunctionPointer = &this->lwSimulate;
 
 		break;
 	case 0xd:			oriDisassemble();
+		Instruction::myFunctionPointer = &this->oriSimulate;
 		break;
 
 
 	case 0xa:			sltiDisassemble();
+		Instruction::myFunctionPointer = &this->sltiSimulate;
 		break;
 
 	case 0x28:			sbDisassemble();
+		Instruction::myFunctionPointer = &this->sbSimulate;
 		break;
 
 
 	case 0x29:			shDisassemble();
+		Instruction::myFunctionPointer = &this->shSimulate;
 		break;
 
 
 	case 0x2b:			swDisassemble();
+		Instruction::myFunctionPointer = &this->swSimulate;
 		break;
 
 	default:
