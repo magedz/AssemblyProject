@@ -70,40 +70,40 @@ void IFormat::decodeInst()
 void IFormat::addiDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	instString += "addi" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	instString += "addi" + registers[rs].name + "," + registers[rt].name + "," + to_string(signedImm);
 	cout << instString << endl;
 }
 
 void IFormat::luiDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	instString += "lui" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	instString += "lui" + registers[rs].name + "," + registers[rt].name + "," + to_string(signedImm);
 	cout << instString << endl;
 }
 void IFormat::addiuDisassemble()
 {
-	instString += "addiu" + registers[rs].name + "," + registers[rt] + "," + to_string(imm);
+	instString += "addiu" + registers[rs].name + "," + registers[rt].name + "," + to_string(imm);
 	cout << instString << endl;
 }
 
 void IFormat::andiDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	instString += "andi" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	instString += "andi" + registers[rs].name + "," + registers[rt].name + "," + to_string(signedImm);
 	cout << instString << endl;
 }
 
 void IFormat::beqDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	instString += "beq" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	instString += "beq" + registers[rs].name + "," + registers[rt].name + "," + to_string(signedImm);
 	cout << instString << endl;
 }
 
 void IFormat::bneDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	instString += "bne" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	instString += "bne" + registers[rs].name + "," + registers[rt].name + "," + to_string(signedImm);
 	cout << instString << endl;
 }
 
@@ -117,14 +117,14 @@ void IFormat::lwDisassemble()
 void IFormat::oriDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	instString += "ori" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	instString += "ori" + registers[rs].name + "," + registers[rt].name + "," + to_string(signedImm);
 	cout << instString << endl;
 }
 
 void IFormat::sltiDisassemble()
 {
 	signedImm = (imm & 0x8000) ? (0xFFFF0000 | imm) : imm;
-	instString += "slti" + registers[rs].name + "," + registers[rt] + "," + to_string(signedImm);
+	instString += "slti" + registers[rs].name + "," + registers[rt].name + "," + to_string(signedImm);
 	cout << instString << endl;
 }
 
