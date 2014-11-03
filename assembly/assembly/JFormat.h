@@ -21,7 +21,7 @@ public:
 		int first4digits,x;
 		string a, b;
 		first4digits = PC && 15;
-		x = instWord && 268435455;
+		x = instWord && 4294967295;
 		add = x << 2;
 		a = to_string(first4digits);
 		b = to_string(add);
@@ -58,7 +58,7 @@ public:
 		lName= "label" + lName;
 		labels.push_back(add);
 		lName = "j "+lName;
-		funcList.push_back(lName);
+		instructions.push_back(lName);
 
 	}
 
@@ -68,7 +68,7 @@ public:
 		lName = "label" + lName;
 		labels.push_back(add);
 		lName = "jal" + lName;
-		funcList.push_back(lName);
+		instruction.push_back(lName);
 	}
 	
 	void jSimulate()
@@ -79,9 +79,9 @@ public:
 	void jalSimulate()
 	{
 		PC = add;
-		R[31] = PC + 8;
+		registers[31].value = PC + 8;
 	}
-
+	 
 
 };
 

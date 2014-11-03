@@ -68,12 +68,14 @@ void RFormat::decodeInst()
 void RFormat::addDisassemble()
 {
 	instString = "add" + string(" ") + registers[rd].name + string(",") + registers[rs].name + string(",") + registers[rt].name; // vector of rd
-	cout << instString;
+	//cout << instString;
+	instructions.push_back(instString);
 }
 void RFormat::adduDisassemble()
 {
 	instString = "addu" + string(" ") + registers[rd].name + string(",") + registers[rs].name + string(",") + registers[rt].name;
-	cout << instString;
+	//cout << instString;
+	instructions.push_back(instString);
 }
 void RFormat::adduSimulate()
 {
@@ -82,7 +84,8 @@ void RFormat::adduSimulate()
 void RFormat::andDisassemble()
 {
 	instString = "and" + string(" ") + registers[rd].name + string(",") + registers[rs].name + string(",") + registers[rt].name;
-	cout << instString;
+	instructions.push_back(instString);
+	//cout << instString;
 }
 void RFormat::andSimulate()
 {
@@ -91,7 +94,8 @@ void RFormat::andSimulate()
 void RFormat::jrDisassemble()
 {
 	instString = "jr" + string(" ") + registers[rs].name;
-	cout << instString;
+	instructions.push_back(instString);
+	//cout << instString;
 }
 void RFormat::jrSimulate()
 {
@@ -100,7 +104,8 @@ void RFormat::jrSimulate()
 void RFormat::sltDisassemble()
 {
 	instString = "slt" + string(" ") + registers[rd].name + string(",") + registers[rs].name + string(",") + registers[rt].name;
-	cout << instString;
+	instructions.push_back(instString);
+	//cout << instString;
 }
 void RFormat::sltSimulate()
 {
@@ -110,12 +115,14 @@ void RFormat::sltSimulate()
 void RFormat::sltuDisassemble()
 {
 	instString = "sltu" + string(" ") + registers[rd].name + string(",") + registers[rs].name + string(",") + registers[rt].name;
-	cout << instString;
+	instructions.push_back(instString);
+	//cout << instString;
 }
 void RFormat::sllDisassemble()
 {
 	instString = "sll" + string(" ") + registers[rd].name + string(",") + registers[rt].name + string(",") + to_string(shamt);
-	cout << instString;
+	instructions.push_back(instString);
+	//cout << instString;
 }
 void RFormat::sllSimulate()
 {
@@ -125,7 +132,8 @@ void RFormat::sllSimulate()
 void RFormat::srlDisassemble()
 {
 	instString = "sll" + string(" ") + registers[rd].name + string(",") + registers[rt].name + string(",") + to_string(shamt);
-	cout << instString;
+	instructions.push_back(instString);
+	//cout << instString;
 	PC += 4;
 }
 void RFormat::srlSimulate()
@@ -136,7 +144,8 @@ void RFormat::srlSimulate()
 void RFormat::subDisassemble()
 {
 	instString = "sll" + string(" ") + registers[rd].name + string(",") + registers[rs].name + string(",") + registers[rt].name;
-	cout << instString;
+	//cout << instString;
+	instructions.push_back(instString);
 	PC += 4;
 }
 void RFormat::subSimulate()
@@ -147,6 +156,7 @@ void RFormat::subSimulate()
 void RFormat::subuDisassemble()
 {
 	instString = "sll" + string(" ") + registers[rd].name + string(",") + registers[rs].name + string(",") + registers[rt].name;
-	cout << instString;
+	//cout << instString;
+	instructions.push_back(instString);
 	PC += 4;
 }

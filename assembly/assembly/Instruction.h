@@ -6,6 +6,7 @@
 class Instruction
 {
 public:
+	static Globals x;
 	Instruction(int); //constructor that takes 32 bit binary
 	string toString() const;
 	friend ostream& operator<<(ostream&, const Instruction&);
