@@ -1,0 +1,189 @@
+﻿Build started 11/2/2014 5:43:27 PM.
+Project "D:\AssemblyProject\assembly\assembly\assembly.vcxproj" on node 2 (Build target(s)).
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt IFormat.cpp Instruction.cpp main.cpp RFormat.cpp Source.cpp
+  Source.cpp
+  RFormat.cpp
+d:\assemblyproject\assembly\assembly\rformat.cpp(21): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(21): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(21): error C2039: 'addSimulate' : is not a member of 'RFormat'
+          d:\assemblyproject\assembly\assembly\rformat.h(6) : see declaration of 'RFormat'
+d:\assemblyproject\assembly\assembly\rformat.cpp(24): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(24): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(24): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\rformat.cpp(28): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(28): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(28): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\rformat.cpp(32): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(32): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(32): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\rformat.cpp(36): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(36): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(36): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\rformat.cpp(39): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(39): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(39): error C2039: 'sltuSimulate' : is not a member of 'RFormat'
+          d:\assemblyproject\assembly\assembly\rformat.h(6) : see declaration of 'RFormat'
+d:\assemblyproject\assembly\assembly\rformat.cpp(44): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(44): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(44): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\rformat.cpp(48): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(48): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(48): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\rformat.cpp(53): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(53): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(53): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\rformat.cpp(57): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\rformat.cpp(57): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(57): error C2039: 'subuSimulate' : is not a member of 'RFormat'
+          d:\assemblyproject\assembly\assembly\rformat.h(6) : see declaration of 'RFormat'
+d:\assemblyproject\assembly\assembly\rformat.cpp(70): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(70): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(75): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(75): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(80): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(80): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(80): error C2228: left of '.value' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(84): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(84): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(89): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(89): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(89): error C2228: left of '.value' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(93): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(93): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(98): error C2065: 'pc' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(98): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(98): error C2228: left of '.value' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(102): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(102): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(107): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(107): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(107): error C2228: left of '.value' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(108): error C2065: 'PC' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(112): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(112): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(117): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(117): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(122): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(122): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(122): error C2228: left of '.value' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(123): error C2065: 'PC' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(127): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(127): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(129): error C2065: 'PC' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(133): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(133): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(133): error C2228: left of '.value' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(134): error C2065: 'PC' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(138): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(138): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(140): error C2065: 'PC' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(144): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(144): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(144): error C2228: left of '.value' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(145): error C2065: 'PC' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(149): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\rformat.cpp(149): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\rformat.cpp(151): error C2065: 'PC' : undeclared identifier
+  main.cpp
+d:\assemblyproject\assembly\assembly\main.cpp(29): error C2065: 'binaryList' : undeclared identifier
+d:\assemblyproject\assembly\assembly\main.cpp(29): error C2228: left of '.push_back' must have class/struct/union
+          type is 'unknown-type'
+  Instruction.cpp
+  IFormat.cpp
+d:\assemblyproject\assembly\assembly\globals.h(3): error C2143: syntax error : missing ';' before 'using'
+d:\assemblyproject\assembly\assembly\iformat.cpp(16): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(16): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(16): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(19): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(19): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(19): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(23): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(23): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(23): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(27): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(27): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(27): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(31): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(31): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(31): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(35): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(35): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(35): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(40): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(40): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(40): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(44): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(44): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(44): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(49): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(49): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(49): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(53): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(53): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(53): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(58): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(58): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(58): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(63): error C2039: 'myFunctionPointer' : is not a member of 'Instruction'
+          d:\assemblyproject\assembly\assembly\instruction.h(7) : see declaration of 'Instruction'
+d:\assemblyproject\assembly\assembly\iformat.cpp(63): error C2065: 'myFunctionPointer' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(63): error C2276: '&' : illegal operation on bound member function expression
+d:\assemblyproject\assembly\assembly\iformat.cpp(74): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(74): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(81): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(81): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(86): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(86): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(93): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(93): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(100): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(100): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(107): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(107): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(114): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(114): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(121): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(121): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(128): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(128): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(135): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(135): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(142): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(142): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(149): error C2065: 'registers' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(149): error C2228: left of '.name' must have class/struct/union
+d:\assemblyproject\assembly\assembly\iformat.cpp(155): error C2065: 'memory' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(156): error C2065: 'PC' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(161): error C2065: 'rd' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(162): error C2065: 'PC' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(167): error C2065: 'memory' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(168): error C2065: 'PC' : undeclared identifier
+d:\assemblyproject\assembly\assembly\iformat.cpp(174): error C2065: 'PC' : undeclared identifier
+  Generating Code...
+Done Building Project "D:\AssemblyProject\assembly\assembly\assembly.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:12.22
